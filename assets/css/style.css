@@ -1,0 +1,181 @@
+:root{
+    --primary:  #000000;
+    --overlay: rgba(0, 0, 0, 0.7);
+    --text-color: white;
+    --footer-color: #228AE6;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+	background-color: var(--primary);
+	
+}
+.navbar .nav-item{
+	padding-left: 1em;
+}
+.navbar .nav-item .nav-link{
+	text-transform: uppercase;
+}
+
+/*carousel slider*/
+.carousel-item{
+	height: 550px;
+}
+.carousel-img-1{
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url(../images/bg1.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+.carousel-img-2{
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .8)), url(../images/img5.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+.carousel-img-3{
+	background: linear-gradient(rgba(0, 0, 0, .5), rgba(64, 64, 64, .8)), url(../images/img4.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+.carousel-caption .btn{
+    background-color: var(--primary) !important;
+}
+/*home icon*/
+.svg-inline--fa{
+	font-size: 50px;
+}
+
+/*get started*/
+#getstart{
+	position: relative;
+	background: url(../images/img7.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 250px;
+}
+#getstart .overlay{
+    background: var(--overlay);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*video*/
+#video{
+	position: relative;
+	background: url(../images/img5.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 250px;
+}
+#video .overlay{
+    background: var(--overlay);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#video a, #video h2{
+	color: var(--footer-color);
+}
+/*gallery*/
+#gallery img{
+	min-height: 250px;
+}
+#copyright{
+	background-color: #228AE6;
+}
+/*footer*/
+.svg-inline--fa.fa-w-14 {
+    width: 25px;
+}
+/*about us page*/
+#about-header{
+	background: url(../images/img10.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center bottom;
+	min-height: 450px;
+}
+/*team*/
+#team img{
+    height: 200px;
+    min-width: 200px;
+    border: 2px solid #228AE6;
+}
+#team p{
+	color: #228AE6;
+}
+
+#testimonial .slick-prev::before,
+#testimonial .slick-next::before{
+	color: #000;
+}
+
+/*services page*/
+#service-header{
+	background: url(../images/service-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	min-height: 450px;
+}
+.svg-inline--fa.fa-w-18,
+.svg-inline--fa.fa-w-14  {
+    font-size: 40px;
+}
+#service .card{
+	height: 220px;
+}
+
+/*provide*/
+#provide .svg-inline--fa.fa-w-16{
+   font-size: 20px;
+}
+
+/*blog section*/
+#blog-header{
+	background: url(../images/blog-bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	min-height: 450px;
+}
+#blog-section card{
+	overflow: hidden;
+}
+#blog-section img{
+	transition: transform 2s;
+}
+#blog-section img:hover{
+	transform: scale(1.1);
+}
+#blog-section img{
+	min-height: 250px;
+}
+
+@media(max-width: 767px){
+	.nav-item{
+		padding-left: 0 !important;
+	}
+	#getstart{
+		min-height: 300px;
+	}
+	#team img{
+	    height: 400px;
+	    width: 100%;
+	    border: 2px solid #228AE6;
+	}
+}
+@media(max-width: 480px){
+	.carousel h2{
+		font-size: 2.5rem;
+	}
+	#getstart{
+		min-height: 350px;
+	}
+}
